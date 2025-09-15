@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #19332d; 
+}
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #ffffff;
+}
+h1 {
+    color: #193233;
+}
+p {
+    color: #192e33;
+    font-size: 1.1em;
+}
+button {
+    background-color: #046049;
+    color: #F4F0EA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+button:hover {
+    background-color: #43a37e;
+}
+button.remover {
+    background-color: #e4030f;
+    color: #F4F0EA;
+    padding: 3px 6px;   /* botão menor */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;   /* texto menor */
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.editar {
+    background-color: #c3c53e; /* coloquei outra cor p/ diferenciar */
+    color: #F4F0EA;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+}
+.botao_lista {
+    background-color: #A34743;
+}
+.botao_lista:hover {
+    background-color: #60041A;
+    color: #F4F0EA;
+}
+.botao-limpar {
+    background-color: #046049;
+    color: #F4F0EA;
+}
+.botao-limpar:hover {
+    background-color: #f31202; /* Uma cor de vermelho um pouco mais escura */
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+ul li {
+    background-color: #F4F0EA;
+    color: #233319;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o campo de entrada */
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus {
+    border-color: #046060;
+    box-shadow: inset 0 2px 4px rgba(250, 250, 250, 0.3);
+}
+/* Efeito de piscar */
+@keyframes piscar {
+    0%, 100% { background-color: transparent; }
+    50% { background-color: #ffcccc; } /* Cor vermelha clara */
+}
+
+/* Aplica a animação à classe de alerta */
+.alerta-tarefa {
+    animation: piscar 1s infinite;
+}
