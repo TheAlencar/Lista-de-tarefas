@@ -115,5 +115,11 @@ input[type="text"]:focus {
 
 /* Aplica a animação à classe de alerta */
 .alerta-tarefa {
-    animation: piscar 1s infinite;
+    animation: piscar 1s infinite !important;
+    border: 2px solid red; /* Adicionei uma borda para reforçar o aviso */
+    color: #a30000; /* Deixa o texto num tom de vermelho escuro */
+}
+
+#mensagem {
+    transition: opacity 0.5s ease;
 }
